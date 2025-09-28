@@ -1,0 +1,14 @@
+{
+	"name": "leetcode",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"test": "node --test --test-reporter=@ironblood/node-test-reporter"
+	},
+	"type": "module",
+	"license": "MIT",
+	"dependencies": {
+		"@datastructures-js/priority-queue": "^6.3.4",
+		"@ironblood/node-test-reporter": "0.1.0"
+	}
+}
