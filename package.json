@@ -10,5 +10,9 @@
 	"dependencies": {
 		"@datastructures-js/priority-queue": "^6.3.4",
 		"@ironblood/node-test-reporter": "0.1.0"
+	},
+	"devDependencies": {
+		"acorn": "^8.15.0",
+		"acorn-walk": "^8.3.4"
 	}
 }

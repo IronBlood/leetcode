@@ -14,6 +14,13 @@ importers:
       '@ironblood/node-test-reporter':
         specifier: 0.1.0
         version: 0.1.0
+    devDependencies:
+      acorn:
+        specifier: ^8.15.0
+        version: 8.15.0
+      acorn-walk:
+        specifier: ^8.3.4
+        version: 8.3.4
 
 packages:
 
@@ -27,6 +34,15 @@ packages:
     resolution: {integrity: sha512-KuRLfIe73uFwT1vE9+AxmhduK6oDJq13Pdo/LBCgVXzz66Qp5Lbt+Z2k8bxbTUcu/mffLl/+50oHNWO2cwrd5Q==}
     engines: {node: '>=18.0.0 || ^16.17.0'}
 
+  acorn-walk@8.3.4:
+    resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
+    engines: {node: '>=0.4.0'}
+
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
 snapshots:
 
   '@datastructures-js/heap@4.3.5': {}
@@ -36,3 +52,9 @@ snapshots:
       '@datastructures-js/heap': 4.3.5
 
   '@ironblood/node-test-reporter@0.1.0': {}
+
+  acorn-walk@8.3.4:
+    dependencies:
+      acorn: 8.15.0
+
+  acorn@8.15.0: {}
