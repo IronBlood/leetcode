@@ -12,6 +12,7 @@
 		"@ironblood/node-test-reporter": "0.1.0"
 	},
 	"devDependencies": {
+		"@ironblood/leetcode-loader": "^0.1.1",
 		"acorn": "^8.15.0",
 		"acorn-walk": "^8.3.4"
 	}
