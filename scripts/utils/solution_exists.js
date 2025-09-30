@@ -7,7 +7,7 @@ import { readdirSync } from "node:fs";
  */
 export const solution_exists = (id) => {
 	const solution_dir = fileURLToPath(new URL("../../src/solutions/", import.meta.url));
-	const reg = new RegExp(`${id}\\..*\\.test\\.js$`);
+	const reg = new RegExp(`^${id}\\..*\\.test\\.js$`);
 	const entries = readdirSync(solution_dir, { withFileTypes: true });
 	for (const entry of entries) {
 		if (entry.isFile() && reg.test(entry.name)) {
