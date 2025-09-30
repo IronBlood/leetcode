@@ -2,6 +2,7 @@ import { LeetcodeClient } from "@ironblood/leetcode-loader";
 import { colors } from "./utils/colors.js";
 import { solution_exists } from "./utils/solution_exists.js";
 import { load_question } from "./utils/load_question.js";
+import { write_to_cache } from "./utils/cache.js";
 
 async function main() {
 	const client = new LeetcodeClient();
@@ -15,9 +16,14 @@ async function main() {
 		title,
 	} = question;
 
+	write_to_cache([{
+		id: Number(questionFrontendId),
+		titleSlug,
+	}]);
+
 	// step 2: check if file exist
 	if (solution_exists(questionFrontendId)) {
-		console.log(`${colors.info("[INFO]")}Question of Today: ${colors.cyan}${questionFrontendId}. ${title}${colors.reset} is already solved, skip...`);
+		console.log(`${colors.info("[INFO]")} Question of Today: ${colors.cyan}${questionFrontendId}. ${title}${colors.reset} is already solved, skip...`);
 		return;
 	}
 

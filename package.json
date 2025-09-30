@@ -4,6 +4,7 @@
 	"version": "0.0.0",
 	"scripts": {
 		"fetch": "node ./scripts/load.js",
+		"fetch:today": "node ./scripts/qot.js",
 		"test": "node --test --test-reporter=@ironblood/node-test-reporter"
 	},
 	"type": "module",
