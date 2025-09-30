@@ -3,6 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"scripts": {
+		"fetch": "node ./scripts/load.js",
 		"test": "node --test --test-reporter=@ironblood/node-test-reporter"
 	},
 	"type": "module",
@@ -12,8 +13,9 @@
 		"@ironblood/node-test-reporter": "0.1.0"
 	},
 	"devDependencies": {
-		"@ironblood/leetcode-loader": "^0.1.1",
+		"@ironblood/leetcode-loader": "^0.1.2",
 		"acorn": "^8.15.0",
-		"acorn-walk": "^8.3.4"
+		"acorn-walk": "^8.3.4",
+		"dotenv": "^17.2.3"
 	}
 }

@@ -1,2 +1,4 @@
 /node_modules
 /*.cpuprofile
+/.env
+list.json
