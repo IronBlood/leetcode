@@ -19,7 +19,6 @@ if (IS_CACHE_ENABLED && !INIT_CWD) {
 	process.exit(0);
 }
 
-console.log(INIT_CWD, LEETCODE_LIST_CACHE);
 const cache_path = resolve(INIT_CWD, LEETCODE_LIST_CACHE);
 
 /**
