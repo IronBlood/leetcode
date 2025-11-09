@@ -70,7 +70,7 @@ describe("1488. Avoid Flood in The City", () => {
 	for (let i = 0; i < testcases.length; i++) {
 		it(`test-${i}`, () => {
 			const tc = testcases[i];
-			assert.strictEqual(JSON.stringify(avoidFlood(tc[0])), JSON.stringify(tc[1]));
+			assert.deepStrictEqual(avoidFlood(tc[0]), tc[1]);
 		});
 	}
 });

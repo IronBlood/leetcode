@@ -37,7 +37,7 @@ describe("2300. Successful Pairs of Spells and Potions", () => {
 		it(`test-${i}`, () => {
 			const tc = testcases[i];
 			const res = successfulPairs(tc[0], tc[1], tc[2]);
-			assert.strictEqual(JSON.stringify(res), JSON.stringify(tc[3]));
+			assert.deepStrictEqual(res, tc[3]);
 		});
 	}
 });

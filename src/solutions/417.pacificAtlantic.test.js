@@ -105,7 +105,7 @@ describe("417. Pacific Atlantic Water Flow", () => {
 
 			helper_sort(res);
 			helper_sort(tc[1]);
-			assert.strictEqual(JSON.stringify(res), JSON.stringify(tc[1]));
+			assert.deepStrictEqual(res, tc[1]);
 		});
 	}
 });
