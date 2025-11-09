@@ -12,8 +12,8 @@ importers:
         specifier: ^6.3.4
         version: 6.3.4
       '@ironblood/node-test-reporter':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.1
+        version: 0.1.1
     devDependencies:
       '@ironblood/leetcode-loader':
         specifier: ^0.1.2
@@ -39,8 +39,8 @@ packages:
   '@ironblood/leetcode-loader@0.1.2':
     resolution: {integrity: sha512-ggLZiVkGd2Om1rS0jm9fOqUmZhq6bt/KyTE3Xfx/YnlbvDHuepakuMwcmLIM/vB0l5ZfCdCelAizh3v16Lc3Ew==}
 
-  '@ironblood/node-test-reporter@0.1.0':
-    resolution: {integrity: sha512-KuRLfIe73uFwT1vE9+AxmhduK6oDJq13Pdo/LBCgVXzz66Qp5Lbt+Z2k8bxbTUcu/mffLl/+50oHNWO2cwrd5Q==}
+  '@ironblood/node-test-reporter@0.1.1':
+    resolution: {integrity: sha512-zlP1rM5E8keWLDLpSP6ZjpH3DR/VtW2gVKSlh5U8om3XEwTkKgXXJRh6yqt1dG6QVp9MgCYxv6OmE6jdxncWcA==}
     engines: {node: '>=18.0.0 || ^16.17.0'}
 
   acorn-walk@8.3.4:
@@ -66,7 +66,7 @@ snapshots:
 
   '@ironblood/leetcode-loader@0.1.2': {}
 
-  '@ironblood/node-test-reporter@0.1.0': {}
+  '@ironblood/node-test-reporter@0.1.1': {}
 
   acorn-walk@8.3.4:
     dependencies:
